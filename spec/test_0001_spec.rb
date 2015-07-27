@@ -1,3 +1,4 @@
+# need to require rails_helper here
 describe "0001 tests" do
   before do
     @files = Dir.glob(File.join(File.dirname(__FILE__), "../programming_tests/0001/*")).map{|f| require(f)}
