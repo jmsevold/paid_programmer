@@ -9,6 +9,10 @@ will be output. (See spec/test_0001_spec.rb to see the exact output)
 
 =end 
 class Transform2
+
+  def initialize
+    @file =
+  end
   def count
     # code goes here
   end
