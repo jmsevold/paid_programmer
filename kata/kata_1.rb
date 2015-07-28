@@ -20,7 +20,27 @@ def array_transformer(array)
   final_result = []
 
   array.each do |mini_array|
-    concatenater(mini_array)
+    target = mini_array[1]
+    if mini_array[0] == 0 && target.class == Fixnum
+      zero_array[1] += target.to_s
+
+    elsif mini_array[0] == 1 && target.class == Fixnum
+      one_array[1] += target.to_s  
+    end
   end
   final_result.push(zero_array,one_array)
+  final_result[0][1] = final_result[0][1].to_i
+  final_result[1][1] = final_result[1][1].to_i
+  final_result
 end
+
+
+
+
+p array_transformer(a)
+
+
+
+
+
+
